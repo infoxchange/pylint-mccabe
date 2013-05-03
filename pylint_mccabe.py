@@ -30,8 +30,14 @@ class McCabe(BaseChecker):
                             }),
     )
 
+    # pylint:disable=unused-argument
+    # Part of the API
     def set_option(self, optname, value, action=None, optdict=None):
-        super(McCabe, self).set_option(optname, value, action, optdict)
+        """
+        Set the max-complexity option.
+        """
+        if optname == 'max-complexity':
+            self.max_complexity = value
 
     def process_module(self, node):
         """
@@ -45,7 +51,7 @@ class McCabe(BaseChecker):
             # Pylint would have already failed
             return
 
-        McCabeChecker.max_complexity = self.config.max_complexity
+        McCabeChecker.max_complexity = self.max_complexity
         results = McCabeChecker(tree, node.file).run()
         for lineno, _, text, _ in results:
             text = text[5:]
