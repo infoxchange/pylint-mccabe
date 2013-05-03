@@ -5,18 +5,18 @@ from distutils.core import setup
 from setuptools import find_packages
 
 setup(
-    name='IXDjango',
-    version='0.1.2',
-    author='Infoxchanhe Australia dev team',
+    name='pylint-mccabe',
+    version='0.1.0',
+    author='Infoxchange Australia dev team',
     author_email='devs@infoxchange.net.au',
     packages=find_packages(),
-    url='http://pypi.python.org/pypi/IXDjango/',
+    url='http://pypi.python.org/pypi/pylint-mccabe/',
     license='MIT',
-    description='Management commands for deploying Django projects.',
-    long_description=open('README').read(),
+    description='McCabe complexity checker as a PyLint plugin',
+    long_description=open('README.rst').read(),
     install_requires=[
-        "Django >= 1.3.0",
-        "flake8 >= 2.0",
-        "pylint >= 0.27.0"
+        'mccabe >= 0.2',
+        'pep8 >= 1.4.5',
+        'pylint >= 0.28.0',
     ],
 )

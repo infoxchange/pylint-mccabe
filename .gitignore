@@ -1,0 +1,4 @@
+*.pyc
+/build
+/dist
+/pylint_mccabe.egg-info
