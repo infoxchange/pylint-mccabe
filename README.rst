@@ -7,12 +7,13 @@ This module provides a PyLint plugin to check McCabe code complexity.
 Usage
 -----
 
-::
-  [MASTER]
-  load-plugins=oooo
+In pylint.conf::
 
-  [DESIGN]
-  max-complexity=10
+    [MASTER]
+    load-plugins=pylint_mccabe
+
+    [DESIGN]
+    max-complexity=10
 
 Dependencies
 ------------
