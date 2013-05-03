@@ -1,15 +1,14 @@
 """
 Package configuration file
 """
-from distutils.core import setup
-from setuptools import find_packages
+from setuptools import setup
 
 setup(
     name='pylint-mccabe',
-    version='0.1.0',
+    version='0.1.1',
     author='Infoxchange Australia dev team',
     author_email='devs@infoxchange.net.au',
-    packages=find_packages(),
+    py_modules=['pylint_mccabe'],
     url='http://pypi.python.org/pypi/pylint-mccabe/',
     license='MIT',
     description='McCabe complexity checker as a PyLint plugin',
