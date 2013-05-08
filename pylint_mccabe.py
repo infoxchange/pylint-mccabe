@@ -19,7 +19,7 @@ class McCabe(BaseChecker):
 
     name = 'mccabe'
     msgs = {
-        'C0901': ('%s', 'Code is too complex'),
+        'C0901': ('%s', 'too-complex', 'Code is too complex'),
     }
     options = (
         ('max-complexity', {'group': 'design',

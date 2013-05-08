@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='pylint-mccabe',
-    version='0.1.1',
+    version='0.1.2',
     author='Infoxchange Australia dev team',
     author_email='devs@infoxchange.net.au',
     py_modules=['pylint_mccabe'],
