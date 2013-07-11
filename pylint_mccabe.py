@@ -37,7 +37,7 @@ class McCabe(BaseChecker):
         Set the max-complexity option.
         """
         if optname == 'max-complexity':
-            self.max_complexity = value
+            self.max_complexity = int(value)
 
     def process_module(self, node):
         """
